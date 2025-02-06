@@ -25,6 +25,3 @@ npm start
 
 ## API Integration
 Uses OpenAI's chat completions endpoint for translations. Requires valid API key.
-
-## Development
-Built with Vite. See [Vite docs](https://vitejs.dev/) for configuration details.
