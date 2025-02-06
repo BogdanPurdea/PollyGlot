@@ -1,0 +1,142 @@
+/* Define colors */
+:root {
+    --blue: #004060;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+.app-header {
+    text-align: center;
+    background-color: #00254d;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-image: url('/assets/worldmap.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.app-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: greenyellow
+}
+
+.tagline {
+    font-size: 1rem;
+    font-style: normal;
+    color: #cce6ff;
+}
+
+/* Main Translation Section Styling */
+.translation-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid;
+    width: 90%;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.translation-section h2 {
+    font-size: 1.2rem;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+.text-input {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.language-options {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.language-options label {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.language-options input {
+    margin-right: 5px;
+}
+
+.flag {
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.translate-button,
+.start-over-button {
+    font: bold;
+    font-weight: bold;
+    background-color: var(--blue);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
